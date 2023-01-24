@@ -488,7 +488,7 @@ a {
   background-color: #fff;
 }
 
-.contacts h4 {
+.contacts p {
   font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -832,7 +832,7 @@ button:visited {
     flex-direction: row;
   }
 
-  .contacts h4 {
+  .contacts p {
     margin-right: 24px;
     flex: 1;
     text-align: start;
