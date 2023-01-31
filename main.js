@@ -3,16 +3,16 @@ const btn = document.querySelector('.nav-btn');
 const btnClose = document.querySelector('.close-btn');
 const menuList = document.querySelectorAll('.nav-toggle a');
 
-btn.addEventListener('click', function addClassToBody () {
+btn.addEventListener('click', () => {
   allBody.classList.add('expand');
 });
 
-btnClose.addEventListener('click', function removeClassToBody () {
+btnClose.addEventListener('click', () => {
   allBody.classList.remove('expand');
 });
 
-for (let list of menuList) {
-  list.addEventListener('click', function removeClassExpand () {
+for (let list = 0; list < menuList.length; list += 1) {
+  list.addEventListener('click', () => {
     allBody.classList.remove('expand');
   });
 }
