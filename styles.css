@@ -1,28 +1,24 @@
 @font-face {
   font-family: 'Roboto';
-  src:
-    url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+  src: url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
     url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Crete Round';
-  src:
-    url('fonts/Crete_Round/CreteRound-Regular.woff2') format('woff2'),
+  src: url('fonts/Crete_Round/CreteRound-Regular.woff2') format('woff2'),
     url('fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src:
-    url('fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+  src: url('fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
     url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter';
-  src:
-    url('fonts/Inter/static/Inter-Regular.woff2') format('woff2'),
+  src: url('fonts/Inter/static/Inter-Regular.woff2') format('woff2'),
     url('fonts/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
@@ -87,7 +83,7 @@ a {
 }
 
 .headline {
-  background-image: url("img/Normal Button/Tertiary/Icons/Group2.png");
+  background-image: url('img/Normal Button/Tertiary/Icons/Group2.png');
   background-repeat: no-repeat;
   background-position: right 295px;
   width: 100%;
@@ -292,7 +288,7 @@ a {
 }
 
 .next-projects {
-  background-image: url("img/Project/Img Placeholder2.png");
+  background-image: url('img/Project/Img Placeholder2.png');
   background-repeat: no-repeat;
   background-size: 327px 386px;
   background-position-x: left;
@@ -386,7 +382,7 @@ a {
 }
 
 .about-me {
-  background-image: url("img/footer/Frame.png");
+  background-image: url('img/footer/Frame.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 350px;
@@ -523,8 +519,8 @@ a {
   margin-bottom: 39px;
 }
 
-input[type=text],
-input[type=email] {
+input[type='text'],
+input[type='email'] {
   width: 100%;
   padding-bottom: 14px;
   font-family: 'Inter', 'Courier New', Courier, monospace;
@@ -533,8 +529,8 @@ input[type=email] {
   transition-duration: 0.5s;
 }
 
-input[type=text]:hover,
-input[type=email]:hover {
+input[type='text']:hover,
+input[type='email']:hover {
   transform: translate(30px);
 }
 
@@ -586,6 +582,48 @@ button:visited {
 .inter-white {
   font-family: 'Inter', 'Courier New', Courier, monospace;
   color: #fff;
+}
+
+.union-vector .close-btn,
+.nav-toggle {
+  display: none;
+}
+.expand .nav-toggle {
+  background-color: #3c3a39;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  order: -1;
+  flex-grow: 8;
+}
+.expand .logo,
+.expand .nav-btn,
+.expand section,
+.expand footer {
+  display: none;
+}
+.expand .toolbar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+.expand .union-vector {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.expand .close-btn {
+  display: flex;
+  margin-top: 24px;
+  margin-right: 24px;
+}
+.expand .union-vector img {
+  height: 100%;
 }
 
 @media all and (min-width: 768px) {
@@ -658,7 +696,7 @@ button:visited {
   }
 
   .projects {
-    background-image: url("img/footer/Frame2.png");
+    background-image: url('img/footer/Frame2.png');
     background-repeat: repeat;
     background-position: right;
   }
@@ -757,7 +795,7 @@ button:visited {
   }
 
   .project2 {
-    background-image: url("img/desktop/project/Img\ Placeholder2.png");
+    background-image: url('img/desktop/project/Img\ Placeholder2.png');
     background-size: auto;
     border: solid 1px #000;
   }
@@ -779,17 +817,17 @@ button:visited {
   }
 
   .project3 {
-    background-image: url("img/desktop/project/Img\ Placeholder3.png");
+    background-image: url('img/desktop/project/Img\ Placeholder3.png');
     background-size: auto;
   }
 
   .project4 {
-    background-image: url("img/desktop/project/Img\ Placeholder4.png");
+    background-image: url('img/desktop/project/Img\ Placeholder4.png');
     background-size: auto;
   }
 
   .project5 {
-    background-image: url("img/desktop/project/Img\ Placeholder5.png");
+    background-image: url('img/desktop/project/Img\ Placeholder5.png');
     background-size: auto;
   }
 
@@ -856,7 +894,7 @@ button:visited {
 
 @media all and (min-width: 1240px) {
   .headline {
-    background-image: url("img/desktop/Illustration-header.png");
+    background-image: url('img/desktop/Illustration-header.png');
     background-repeat: no-repeat;
     background-position: right top;
   }
@@ -873,7 +911,7 @@ button:visited {
   }
 
   .about-me {
-    background-image: url("img/desktop/illustration-about\ me@2x.png");
+    background-image: url('img/desktop/illustration-about\ me@2x.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 672px 352px;
