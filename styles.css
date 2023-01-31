@@ -598,6 +598,13 @@ button:visited {
   order: -1;
   flex-grow: 8;
 }
+
+.expand .nav-toggle li {
+  margin-top: 24px;
+  padding-bottom: 15px;
+  border-bottom: #6f6c6f 1px solid;
+}
+
 .expand .logo,
 .expand .nav-btn,
 .expand section,
@@ -619,7 +626,7 @@ button:visited {
 }
 .expand .close-btn {
   display: flex;
-  margin-top: 24px;
+  margin-top: 18px;
   margin-right: 24px;
 }
 .expand .union-vector img {
