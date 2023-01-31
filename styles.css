@@ -589,6 +589,7 @@ button:visited {
   display: none;
 }
 .expand .nav-toggle {
+  margin-top: 108px;
   background-color: #3c3a39;
   font-weight: 700;
   font-size: 32px;
