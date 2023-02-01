@@ -82,4 +82,13 @@ let works = {
     liveLink: '<button type="button">See Live<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></button>',
     sourceLink: '<button type="button">See Live<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></button>'
   },
+};
+
+const openButtons = document.querySelectorAll('.projects .card');
+const projectId = ["projectOne", "projectTwo", "projectThree", "projectFour", "projectFive", "projectSix", "projectSeven"];
+
+for (let list = 0; list < openButtons.length; list += 1) {
+  openButtons[list].addEventListener('click', () => {
+    
+  });
 }
