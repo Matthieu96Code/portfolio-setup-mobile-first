@@ -118,6 +118,17 @@ for (let list = 0; list < openButtons.length; list += 1) {
     descriptionAndButton.innerHTML = works[projectId[list]].description, 
     seeLive.innerHTML = works[projectId[list]].liveLink
     seeSource.innerHTML = works[projectId[list]].sourceLink
-    
+
+    seeButton.appendChild(seeLive);
+    seeButton.appendChild(seeSource);
+
+    popup.appendChild(titleAndCross);
+    popup.appendChild(exit);
+    popup.appendChild(technologieUse);
+    popup.appendChild(interfaceFeature);
+    popup.appendChild(descriptionAndButton);
+    popup.appendChild(seeButton);
+    main.appendChild(popup);
+    allBody.appendChild(main);
   }); 
 }
