@@ -1,0 +1,158 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.title-cross h3 {
+    max-width: 80%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-bottom: 0;
+    margin-top: 16px;
+    padding-bottom: 40px;
+}
+
+.exit-icon {
+    position: absolute;
+    right: 30px;
+    top: 8%;
+}
+
+.technologie-use ul {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.technologie-use li {
+    border: 1px solid #8993a4;
+    padding: 10px 12px;
+    margin-right: 12px;
+}
+
+.interface-feature {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.interface-feature img {
+    width: 100%;
+    height: auto;
+}
+
+.description-button {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.see-button {
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+}
+
+.see-button li{
+    background-color: #ff6b00;
+    margin-right: 19px;
+    padding: 12px;
+}
+
+.see-button a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+}
+
+@media all and (min-width: 768px) {
+    .popup{
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 44px 100px auto 65px;
+        padding: 27px;
+    }
+    
+    .title-cross {
+        grid-column: 1 / span 2 ;
+        grid-row: 1 / span 1;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .title-cross h3{
+        padding: 0;
+        margin: 0;
+    }
+
+    .exit-icon {
+        position: absolute;
+        right: 12%;
+        top: 12%;
+    }
+
+    .technologie-use {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .technologie-use ul{
+        display: flex;
+    }
+    
+    .interface-feature {
+        grid-column: 1 / span 1;
+        grid-row: 3 / 5;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .interface-feature img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .description-button {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        height: min-content;
+    }
+
+    .see-button {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        justify-content: flex-start;
+    }
+
+    .see-button li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+}
