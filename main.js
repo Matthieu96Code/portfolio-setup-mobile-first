@@ -12,7 +12,7 @@ btnClose.addEventListener('click', () => {
 });
 
 for (let list = 0; list < menuList.length; list += 1) {
-  list.addEventListener('click', () => {
+    menuList[list].addEventListener('click', () => {
     allBody.classList.remove('expand');
   });
 }
@@ -34,8 +34,8 @@ let works = {
     description: '<p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>',
     featuredImage: '<img src="img\\Project\\Img Placeholder.png" alt="project one interface"></img>', 
     technologies: '<ul>\n\t<li><a href="#" >css</a></li>\n\t<li><a href="#" >html</a></li>\n\t<li><a href="#" >bootstrap</a></li>\n\t<li><a href="#" >Ruby</a></li>\n</ul>',
-    liveLink: '<a href"#">See Live<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></a>',
-    sourceLink: '<a href="#">See Source<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></a>'
+    liveLink: '<a href"#">See Live<img src="img\\popup\\see live.png" alt="git-logo"></a>',
+    sourceLink: '<a href="#">See Source<img src="img\\popup\\Vector.png" alt="git-logo"></a>'
   },
 
   projectThree : {
