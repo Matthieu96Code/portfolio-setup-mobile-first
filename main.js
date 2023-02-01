@@ -25,13 +25,13 @@ let works = {
     description:
       "<p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>",
     featuredImage:
-      '<img src="imgProjectImg Placeholder.png" alt="project one interface"></img>',
+      '<img src="img\\Project\\Img Placeholder.png" alt="project one interface"></img>',
     technologies:
       '<ul>\n\t<li><a href="#" >css</a></li>\n\t<li><a href="#" >html</a></li>\n\t<li><a href="#" >bootstrap</a></li>\n\t<li><a href="#" >Ruby</a></li>\n</ul>',
     liveLink:
-      '<button type="button">See Live<img src="imgProjectImg Placeholder.png" alt="project one interface"></img></button>',
+      '<a href"#">See Live<img src="img\\popup\\see live.png" alt="live icon"></a>',
     sourceLink:
-      '<button type="button">See Live<img src="imgProjectImg Placeholder.png" alt="project one interface"></img></button>',
+      '<a href="#">See Source<img src="img\\popup\\Vector.png" alt="git logo"></a>',
   },
 
   projectTwo: {
@@ -43,9 +43,9 @@ let works = {
     technologies:
       '<ul>\n\t<li><a href="#" >css</a></li>\n\t<li><a href="#" >html</a></li>\n\t<li><a href="#" >bootstrap</a></li>\n\t<li><a href="#" >Ruby</a></li>\n</ul>',
     liveLink:
-      '<a href"#">See Live<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></a>',
+      '<a href"#">See Live<img src="img\\popup\\see live.png" alt="live icon"></a>',
     sourceLink:
-      '<a href="#">See Source<img src="img\\Normal Button\\Tertiary\\Icons\\Vector.png" alt="git-logo"></a>',
+      '<a href="#">See Source<img src="img\\pupop\\Vector.png" alt="git logo"></a>',
   },
 
   projectThree: {

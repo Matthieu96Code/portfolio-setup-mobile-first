@@ -1,3 +1,4 @@
+
 .main {
     width: 100vw;
     height: 100vh;
@@ -20,7 +21,7 @@
 
 .title-cross h3 {
     max-width: 80%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -79,7 +80,7 @@
 }
 
 .see-button a{
-    font-family: 'Inter';
+    font-family: 'Inter', 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -93,7 +94,7 @@
         height: 80%;
         background-color: white;
         display: grid;
-        grid-template-columns: 60% auto;
+        grid-template-columns: 65% auto;
         grid-template-rows: 44px 100px auto 65px;
         padding: 27px;
     }
@@ -133,11 +134,17 @@
     }
     
     .interface-feature img {
-        width: inherit;
+        width: max-content;
         height: inherit;
+        max-width: 50vw;
     }
 
     .description-button {
+        font-family: 'Inter', 'Courier New', Courier, monospace;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
         grid-column: 2 / span 1;
         grid-row: 3 / span 1;
         height: min-content;

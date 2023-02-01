@@ -1,29 +1,21 @@
 @font-face {
   font-family: 'Roboto';
-  src:
-    url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
-    url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Crete Round';
-  src:
-    url('fonts/Crete_Round/CreteRound-Regular.woff2') format('woff2'),
-    url('fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
+  src: url('fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src:
-    url('fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
-    url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter';
-  src:
-    url('fonts/Inter/static/Inter-Regular.woff2') format('woff2'),
-    url('fonts/Inter/static/Inter-Regular.ttf') format('truetype');
+  src: url('fonts/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
 body {
