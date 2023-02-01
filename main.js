@@ -89,6 +89,27 @@ const projectId = ["projectOne", "projectTwo", "projectThree", "projectFour", "p
 
 for (let list = 0; list < openButtons.length; list += 1) {
   openButtons[list].addEventListener('click', () => {
+    const main = document.createElement('div');
+    main.className = 'main';
+    const popup = document.createElement('div');
+    popup.className = 'popup'
+    const titleAndCross = document.createElement('div');
+    titleAndCross.className = 'title-cross'
+    const technologieUse = document.createElement('div');
+    technologieUse.className = 'technologie-use'
+    const interfaceFeature = document.createElement('div');
+    interfaceFeature.className = 'interface-feature'
+    const descriptionAndButton = document.createElement('div');
+    descriptionAndButton.className = 'description-button'
+    const seeButton = document.createElement('ul');
+    seeButton.className = 'see-button'
+    const seeLive = document.createElement('li');
+    seeLive.className = 'see-live'
+    const seeSource = document.createElement('li');
+    seeSource.className = 'see-source'
     
+    const exit = document.createElement('div');
+    exit.className = 'exit-icon'
+    exit.innerHTML = '<img src="img/popup/Union 2.png" alt="exit-icon">'
   }); 
 }
