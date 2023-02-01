@@ -130,5 +130,9 @@ for (let list = 0; list < openButtons.length; list += 1) {
     popup.appendChild(seeButton);
     main.appendChild(popup);
     allBody.appendChild(main);
+
+    exit.addEventListener('click', () => {
+      main.remove();
+    });
   }); 
 }
