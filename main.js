@@ -90,5 +90,5 @@ const projectId = ["projectOne", "projectTwo", "projectThree", "projectFour", "p
 for (let list = 0; list < openButtons.length; list += 1) {
   openButtons[list].addEventListener('click', () => {
     
-  });
+  }); 
 }
