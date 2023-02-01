@@ -811,7 +811,9 @@ button:visited {
   }
 
   .next-projects button {
-    display: none;
+    width: auto;
+    display: flex;
+    margin: 0;
   }
 
   .project2 {
@@ -826,14 +828,8 @@ button:visited {
     color: black;
   }
 
-  .project2 p {
+  .project2 a {
     color: black;
-  }
-
-  .next-projects button {
-    width: auto;
-    display: flex;
-    margin: 0;
   }
 
   .project3 {
