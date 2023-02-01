@@ -11,7 +11,7 @@ btnClose.addEventListener("click", () => {
   allBody.classList.remove("expand");
 });
 
-for (let list = 0; list < menuList[list].length; list += 1) {
+for (let list = 0; list < menuList.length; list += 1) {
   list.addEventListener("click", () => {
     allBody.classList.remove("expand");
   });
