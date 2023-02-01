@@ -111,5 +111,13 @@ for (let list = 0; list < openButtons.length; list += 1) {
     const exit = document.createElement('div');
     exit.className = 'exit-icon'
     exit.innerHTML = '<img src="img/popup/Union 2.png" alt="exit-icon">'
+
+    titleAndCross.innerHTML = works[projectId[list]].name;
+    technologieUse.innerHTML = works[projectId[list]].technologies
+    interfaceFeature.innerHTML = works[projectId[list]].featuredImage
+    descriptionAndButton.innerHTML = works[projectId[list]].description, 
+    seeLive.innerHTML = works[projectId[list]].liveLink
+    seeSource.innerHTML = works[projectId[list]].sourceLink
+    
   }); 
 }
