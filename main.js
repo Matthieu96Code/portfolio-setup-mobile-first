@@ -179,3 +179,15 @@ for (let list = 0; list < openButtons.length; list += 1) {
     });
   });
 }
+
+const hover = document.querySelectorAll('.next-projects button');
+
+for (let list = 0; list < openButtons.length; list += 1) {
+  openButtons[list + 1].addEventListener('mouseover', () => {
+    hover[list].style.display = 'flex';
+  });
+  openButtons[list + 1].addEventListener('mouseout', () => {
+    hover[list].style.display = 'none';
+  });
+  hover[list].style.display = 'none';
+}

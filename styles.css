@@ -823,14 +823,14 @@ button:visited {
   .project2 h3,
   .project2 ul,
   .project2 p {
-    display: none;
+    color: black;
   }
 
   .project2 p {
-    display: none;
+    color: black;
   }
 
-  .project2 button {
+  .next-projects button {
     width: auto;
     display: flex;
     margin: 0;
