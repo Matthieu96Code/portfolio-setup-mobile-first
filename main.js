@@ -188,19 +188,19 @@ const hoverTechnologie = document.querySelectorAll('.next-projects .dskp-project
 const hoverTitle = document.querySelectorAll('.next-projects ul');
 
 if (x.matches) {
-  for (let list = 0; list < openButtons.length; list += 1) {
-    openButtons[list + 1].addEventListener('mouseover', () => {
+  for (let list = 0; list < hoverButtons.length; list += 1) {
+    openButtons[list].addEventListener('mouseover', () => {
       hoverButton[list].style.display = 'flex';
       hoverDescription[list].style.display = 'none';
       hoverTechnologie[list].style.display = 'none';
       hoverTitle[list].style.display = 'none';
     });
-    openButtons[list + 1].addEventListener('mouseout', () => {
+    openButtons[list].addEventListener('mouseout', () => {
       hoverButton[list].style.display = 'none';
       hoverDescription[list].style.display = 'flex';
       hoverTechnologie[list].style.display = 'flex';
       hoverTitle[list].style.display = 'flex';
     });
-    hoverButton[list].style.display = 'none';
+    hoverButton[list].style.display = 'none';git 
   }
 }
