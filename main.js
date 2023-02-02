@@ -188,7 +188,7 @@ const hoverTechnologie = document.querySelectorAll('.next-projects .dskp-project
 const hoverTitle = document.querySelectorAll('.next-projects ul');
 
 if (x.matches) {
-  for (let list = 0; list < openButtons.length; list += 1) {
+  for (let list = 0; list < hoverButton.length; list += 1) {
     openButtons[list + 1].addEventListener('mouseover', () => {
       hoverButton[list].style.display = 'flex';
       hoverDescription[list].style.display = 'none';
@@ -204,3 +204,16 @@ if (x.matches) {
     hoverButton[list].style.display = 'none';
   }
 }
+
+const formValue = document.querySelector('.contact-form');
+const mailValue = document.getElementById('email');
+const myRegx = /^[A-Z]/;
+
+formValue.addEventListener('submit', (event) => {
+  if (myRegx.test(mailValue.value)) {
+    event.preventDefault();
+    document.getElementById('email-notification').textContent = 'email format not valid try again';
+    document.getElementById('email-notification').style.color = 'red';
+    document.getElementById('email-notification').style.position = 'absolute';
+  }
+});
