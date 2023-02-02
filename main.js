@@ -180,23 +180,27 @@ for (let list = 0; list < openButtons.length; list += 1) {
   });
 }
 
+const x = window.matchMedia('(min-width: 768px)');
+
 const hoverButton = document.querySelectorAll('.next-projects button');
 const hoverDescription = document.querySelectorAll('.next-projects p');
 const hoverTechnologie = document.querySelectorAll('.next-projects .dskp-project');
 const hoverTitle = document.querySelectorAll('.next-projects ul');
 
-for (let list = 0; list < openButtons.length; list += 1) {
-  openButtons[list + 1].addEventListener('mouseover', () => {
-    hoverButton[list].style.display = 'flex';
-    hoverDescription[list].style.display = 'none';
-    hoverTechnologie[list].style.display = 'none';
-    hoverTitle[list].style.display = 'none';
-  });
-  openButtons[list + 1].addEventListener('mouseout', () => {
+if (x.matches) {
+  for (let list = 0; list < openButtons.length; list += 1) {
+    openButtons[list + 1].addEventListener('mouseover', () => {
+      hoverButton[list].style.display = 'flex';
+      hoverDescription[list].style.display = 'none';
+      hoverTechnologie[list].style.display = 'none';
+      hoverTitle[list].style.display = 'none';
+    });
+    openButtons[list + 1].addEventListener('mouseout', () => {
+      hoverButton[list].style.display = 'none';
+      hoverDescription[list].style.display = 'flex';
+      hoverTechnologie[list].style.display = 'flex';
+      hoverTitle[list].style.display = 'flex';
+    });
     hoverButton[list].style.display = 'none';
-    hoverDescription[list].style.display = 'flex';
-    hoverTechnologie[list].style.display = 'flex';
-    hoverTitle[list].style.display = 'flex';
-  });
-  hoverButton[list].style.display = 'none';
+  }
 }

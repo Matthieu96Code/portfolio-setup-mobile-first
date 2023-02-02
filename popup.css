@@ -160,7 +160,6 @@
   .see-button {
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
-    justify-content: flex-start;
     flex-wrap: wrap-reverse;
   }
 
