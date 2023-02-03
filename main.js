@@ -225,8 +225,10 @@ const fullName = document.getElementById("full-name");
 const userEmail = document.getElementById("email");
 const userText = document.getElementById("user-comment");
 
-const userData = {
-  userName: fullName.value,
-  emailAddress: userEmail.value,
-  userComment: userText.value,
-};
+formValue.addEventListener('change', () => {
+  const userData = {
+    userName: fullName.value,
+    emailAddress: userEmail.value,
+    userComment: userText.value
+  }
+});
