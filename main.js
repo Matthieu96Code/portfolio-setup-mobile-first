@@ -217,3 +217,7 @@ formValue.addEventListener('submit', (event) => {
     document.getElementById('email-notification').style.position = 'absolute';
   }
 });
+
+const fullName = document.getElementById('full-name');
+const userEmail = document.getElementById('email');
+const userText = document.getElementById('user-comment');
