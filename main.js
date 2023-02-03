@@ -184,7 +184,9 @@ const x = window.matchMedia('(min-width: 768px)');
 
 const hoverButton = document.querySelectorAll('.next-projects button');
 const hoverDescription = document.querySelectorAll('.next-projects p');
-const hoverTechnologie = document.querySelectorAll('.next-projects .dskp-project');
+const hoverTechnologie = document.querySelectorAll(
+  '.next-projects .dskp-project',
+);
 const hoverTitle = document.querySelectorAll('.next-projects ul');
 
 if (x.matches) {
@@ -217,3 +219,24 @@ formValue.addEventListener('submit', (event) => {
     document.getElementById('email-notification').style.position = 'absolute';
   }
 });
+
+const fullName = document.getElementById('full-name');
+const userEmail = document.getElementById('email');
+const userText = document.getElementById('user-comment');
+
+formValue.addEventListener('change', () => {
+  const userData = {
+    userName: fullName.value,
+    emailAddress: userEmail.value,
+    userComment: userText.value,
+  };
+  const storeD = JSON.stringify(userData);
+  localStorage.setItem('userData', storeD);
+});
+
+const newValue = localStorage.getItem('userData');
+const newData = JSON.parse(newValue);
+
+fullName.value = newData.userName;
+userEmail.value = newData.emailAddress;
+userText.value = newData.userComment;

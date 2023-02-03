@@ -41,13 +41,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **show a portfolio on a web page**
-- **show a design based on the chosen template**
-- **show the main lines of information**
-- **show the works section**
-- **show section about me**
-- **show contact form**
-- **allow submission**
+- **Design based on template 2**
+- **Menu popup in mobile version screen**
+- **Main lines of information**
+- **Works section, about me and the contact form**
+- **Popup window of every project when the user click on the project card**
+- **Allow submission if the user enter email in lowerCase**
+- **Store user input and show it in field by default**
 - **responsivity**
 
 
