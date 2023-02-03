@@ -1,19 +1,19 @@
-const allBody = document.querySelector('body');
-const btn = document.querySelector('.nav-btn');
-const btnClose = document.querySelector('.close-btn');
-const menuList = document.querySelectorAll('.nav-toggle a');
+const allBody = document.querySelector("body");
+const btn = document.querySelector(".nav-btn");
+const btnClose = document.querySelector(".close-btn");
+const menuList = document.querySelectorAll(".nav-toggle a");
 
-btn.addEventListener('click', () => {
-  allBody.classList.add('expand');
+btn.addEventListener("click", () => {
+  allBody.classList.add("expand");
 });
 
-btnClose.addEventListener('click', () => {
-  allBody.classList.remove('expand');
+btnClose.addEventListener("click", () => {
+  allBody.classList.remove("expand");
 });
 
 for (let list = 0; list < menuList.length; list += 1) {
-  menuList[list].addEventListener('click', () => {
-    allBody.classList.remove('expand');
+  menuList[list].addEventListener("click", () => {
+    allBody.classList.remove("expand");
   });
 }
 
@@ -21,7 +21,7 @@ for (let list = 0; list < menuList.length; list += 1) {
 
 const works = {
   projectOne: {
-    name: '<h3>Multi-Post Stories</h3>',
+    name: "<h3>Multi-Post Stories</h3>",
     description:
       "<p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>",
     featuredImage:
@@ -119,40 +119,40 @@ const works = {
   },
 };
 
-const openButtons = document.querySelectorAll('.projects .card');
+const openButtons = document.querySelectorAll(".projects .card");
 const projectId = [
-  'projectOne',
-  'projectTwo',
-  'projectThree',
-  'projectFour',
-  'projectFive',
-  'projectSix',
-  'projectSeven',
+  "projectOne",
+  "projectTwo",
+  "projectThree",
+  "projectFour",
+  "projectFive",
+  "projectSix",
+  "projectSeven",
 ];
 
 for (let list = 0; list < openButtons.length; list += 1) {
-  openButtons[list].addEventListener('click', () => {
-    const main = document.createElement('div');
-    main.className = 'main';
-    const popup = document.createElement('div');
-    popup.className = 'popup';
-    const titleAndCross = document.createElement('div');
-    titleAndCross.className = 'title-cross';
-    const technologieUse = document.createElement('div');
-    technologieUse.className = 'technologie-use';
-    const interfaceFeature = document.createElement('div');
-    interfaceFeature.className = 'interface-feature';
-    const descriptionAndButton = document.createElement('div');
-    descriptionAndButton.className = 'description-button';
-    const seeButton = document.createElement('ul');
-    seeButton.className = 'see-button';
-    const seeLive = document.createElement('li');
-    seeLive.className = 'see-live';
-    const seeSource = document.createElement('li');
-    seeSource.className = 'see-source';
+  openButtons[list].addEventListener("click", () => {
+    const main = document.createElement("div");
+    main.className = "main";
+    const popup = document.createElement("div");
+    popup.className = "popup";
+    const titleAndCross = document.createElement("div");
+    titleAndCross.className = "title-cross";
+    const technologieUse = document.createElement("div");
+    technologieUse.className = "technologie-use";
+    const interfaceFeature = document.createElement("div");
+    interfaceFeature.className = "interface-feature";
+    const descriptionAndButton = document.createElement("div");
+    descriptionAndButton.className = "description-button";
+    const seeButton = document.createElement("ul");
+    seeButton.className = "see-button";
+    const seeLive = document.createElement("li");
+    seeLive.className = "see-live";
+    const seeSource = document.createElement("li");
+    seeSource.className = "see-source";
 
-    const exit = document.createElement('div');
-    exit.className = 'exit-icon';
+    const exit = document.createElement("div");
+    exit.className = "exit-icon";
     exit.innerHTML = '<img src="img/popup/Union 2.png" alt="exit-icon">';
 
     titleAndCross.innerHTML = works[projectId[list]].name;
@@ -174,50 +174,59 @@ for (let list = 0; list < openButtons.length; list += 1) {
     main.appendChild(popup);
     allBody.appendChild(main);
 
-    exit.addEventListener('click', () => {
+    exit.addEventListener("click", () => {
       main.remove();
     });
   });
 }
 
-const x = window.matchMedia('(min-width: 768px)');
+const x = window.matchMedia("(min-width: 768px)");
 
-const hoverButton = document.querySelectorAll('.next-projects button');
-const hoverDescription = document.querySelectorAll('.next-projects p');
-const hoverTechnologie = document.querySelectorAll('.next-projects .dskp-project');
-const hoverTitle = document.querySelectorAll('.next-projects ul');
+const hoverButton = document.querySelectorAll(".next-projects button");
+const hoverDescription = document.querySelectorAll(".next-projects p");
+const hoverTechnologie = document.querySelectorAll(
+  ".next-projects .dskp-project"
+);
+const hoverTitle = document.querySelectorAll(".next-projects ul");
 
 if (x.matches) {
   for (let list = 0; list < hoverButton.length; list += 1) {
-    openButtons[list + 1].addEventListener('mouseover', () => {
-      hoverButton[list].style.display = 'flex';
-      hoverDescription[list].style.display = 'none';
-      hoverTechnologie[list].style.display = 'none';
-      hoverTitle[list].style.display = 'none';
+    openButtons[list + 1].addEventListener("mouseover", () => {
+      hoverButton[list].style.display = "flex";
+      hoverDescription[list].style.display = "none";
+      hoverTechnologie[list].style.display = "none";
+      hoverTitle[list].style.display = "none";
     });
-    openButtons[list + 1].addEventListener('mouseout', () => {
-      hoverButton[list].style.display = 'none';
-      hoverDescription[list].style.display = 'flex';
-      hoverTechnologie[list].style.display = 'flex';
-      hoverTitle[list].style.display = 'flex';
+    openButtons[list + 1].addEventListener("mouseout", () => {
+      hoverButton[list].style.display = "none";
+      hoverDescription[list].style.display = "flex";
+      hoverTechnologie[list].style.display = "flex";
+      hoverTitle[list].style.display = "flex";
     });
-    hoverButton[list].style.display = 'none';
+    hoverButton[list].style.display = "none";
   }
 }
 
-const formValue = document.querySelector('.contact-form');
-const mailValue = document.getElementById('email');
+const formValue = document.querySelector(".contact-form");
+const mailValue = document.getElementById("email");
 const myRegx = /^[A-Z]/;
 
-formValue.addEventListener('submit', (event) => {
+formValue.addEventListener("submit", (event) => {
   if (myRegx.test(mailValue.value)) {
     event.preventDefault();
-    document.getElementById('email-notification').textContent = 'email format not valid try again';
-    document.getElementById('email-notification').style.color = 'red';
-    document.getElementById('email-notification').style.position = 'absolute';
+    document.getElementById("email-notification").textContent =
+      "email format not valid try again";
+    document.getElementById("email-notification").style.color = "red";
+    document.getElementById("email-notification").style.position = "absolute";
   }
 });
 
-const fullName = document.getElementById('full-name');
-const userEmail = document.getElementById('email');
-const userText = document.getElementById('user-comment');
+const fullName = document.getElementById("full-name");
+const userEmail = document.getElementById("email");
+const userText = document.getElementById("user-comment");
+
+const userData = {
+  userName: fullName.value,
+  emailAddress: userEmail.value,
+  userComment: userText.value,
+};
