@@ -236,3 +236,7 @@ formValue.addEventListener('change', () => {
 
 const newValue = localStorage.getItem('userData');
 const newData = JSON.parse(newValue);
+
+fullName.value = newData.userName;
+userEmail.value = newData.emailAddress;
+userText.value = newData.userComment;
