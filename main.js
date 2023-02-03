@@ -233,3 +233,6 @@ formValue.addEventListener('change', () => {
   const storeD = JSON.stringify(userData);
   localStorage.setItem('userData', storeD);
 });
+
+const newValue = localStorage.getItem('userData');
+const newData = JSON.parse(newValue);
