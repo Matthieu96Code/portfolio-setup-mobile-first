@@ -207,12 +207,12 @@ if (x.matches) {
   }
 }
 
-const formValue = document.querySelector('.contact-form');
+const formValue = document.querySelector('contact-form');
 const mailValue = document.getElementById('email');
 const myRegx = /^[A-Z]/;
 
 formValue.addEventListener('submit', (event) => {
-  if (myRegx.test(mailValue.value)) {
+  if (Regx.test(mailValue.value)) {
     event.preventDefault();
     document.getElementById('email-notification').textContent = 'email format not valid try again';
     document.getElementById('email-notification').style.color = 'red';
