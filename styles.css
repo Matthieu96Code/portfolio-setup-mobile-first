@@ -46,7 +46,8 @@ a {
 
 .logo {
   margin-left: 24px;
-  animation: 0.5s rotated;
+  transform: rotate(360deg);
+  transition: 2s;
 }
 
 .logo a {
@@ -57,16 +58,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-}
-
-@keyframes rotated {
-  from {
-    transform: rotate(45deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
 }
 
 .nav-btn {
