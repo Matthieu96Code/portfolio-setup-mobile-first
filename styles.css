@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Crete Round';
-  src: url('fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
+  src: url('./fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('fonts/Inter/static/Inter-Regular.ttf') format('truetype');
+  src: url('./fonts/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
 body {
@@ -46,7 +46,8 @@ a {
 
 .logo {
   margin-left: 24px;
-  animation: 0.5s rotated;
+  transform: rotate(360deg);
+  transition: 2s;
 }
 
 .logo a {
@@ -59,16 +60,6 @@ a {
   text-decoration: none;
 }
 
-@keyframes rotated {
-  from {
-    transform: rotate(45deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
-
 .nav-btn {
   float: right;
   margin-right: 24px;
@@ -79,7 +70,7 @@ a {
 }
 
 .headline {
-  background-image: url('img/Normal Button/Tertiary/Icons/Group2.png');
+  background-image: url('./img/Normal Button/Tertiary/Icons/Group2.png');
   background-repeat: no-repeat;
   background-position: right 295px;
   width: 100%;
@@ -284,7 +275,7 @@ a {
 }
 
 .next-projects {
-  background-image: url('img/Project/Img Placeholder2.png');
+  background-image: url('./img/Project/Img Placeholder2.png');
   background-repeat: no-repeat;
   background-size: 327px 386px;
   background-position-x: left;
@@ -378,7 +369,7 @@ a {
 }
 
 .about-me {
-  background-image: url('img/footer/Frame.png');
+  background-image: url('./img/footer/Frame.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 350px;
@@ -409,7 +400,7 @@ a {
 }
 
 .achivement {
-  background-image: url(img/footer/Frame2.png);
+  background-image: url(./img/footer/Frame2.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #1c1a19;
@@ -716,7 +707,7 @@ button:visited {
   }
 
   .projects {
-    background-image: url('img/footer/Frame2.png');
+    background-image: url('./img/footer/Frame2.png');
     background-repeat: repeat;
     background-position: right;
   }
@@ -817,7 +808,7 @@ button:visited {
   }
 
   .project2 {
-    background-image: url('img/desktop/project/Img\ Placeholder2.png');
+    background-image: url('./img/desktop/project/img Placeholder2.png');
     background-size: auto;
     border: solid 1px #000;
   }
@@ -833,17 +824,17 @@ button:visited {
   }
 
   .project3 {
-    background-image: url('img/desktop/project/Img\ Placeholder3.png');
+    background-image: url('./img/desktop/project/Img Placeholder3.png');
     background-size: auto;
   }
 
   .project4 {
-    background-image: url('img/desktop/project/Img\ Placeholder4.png');
+    background-image: url('./img/desktop/project/Img Placeholder4.png');
     background-size: auto;
   }
 
   .project5 {
-    background-image: url('img/desktop/project/Img\ Placeholder5.png');
+    background-image: url('./img/desktop/project/Img Placeholder5.png');
     background-size: auto;
   }
 
@@ -910,7 +901,7 @@ button:visited {
 
 @media all and (min-width: 1240px) {
   .headline {
-    background-image: url('img/desktop/Illustration-header.png');
+    background-image: url('./img/desktop/Illustration-header.png');
     background-repeat: no-repeat;
     background-position: right top;
   }
@@ -927,7 +918,7 @@ button:visited {
   }
 
   .about-me {
-    background-image: url('img/desktop/illustration-about\ me@2x.png');
+    background-image: url('./img/desktop/illustration-about me@2x.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 672px 352px;
