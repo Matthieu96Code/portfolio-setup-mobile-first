@@ -222,9 +222,18 @@
                 </h4>
                 <form class="contact-form" action="https://formspree.io/f/mlekdbwd" method="post">
                     <ul>
-                        <li><input type="text" name="Full-name" id="full-name" maxlength="30" placeholder="Full name" required></li>
-                        <li><input type="email" name="email" id="email" placeholder="Email address" required></li>
-                        <li><textarea name="comment" id="user-comment" cols="30" rows="7" maxlength="500" placeholder="Enter text here" required></textarea><span id="email-notification"></span></li>
+                        <li>
+                            <input type="text" name="Full-name" id="full-name" maxlength="30" placeholder="Full name" required>
+                            <label for="full-name"></label>
+                        </li>
+                        <li>
+                            <input type="email" name="email" id="email" placeholder="Email address" required>
+                            <label for="email"></label>
+                        </li>
+                        <li>
+                            <textarea name="comment" id="user-comment" cols="30" rows="7" maxlength="500" placeholder="Enter text here" required></textarea><span id="email-notification"></span>
+                            <label for="comment"></label>
+                        </li>
                         <li><button type="submit" class="social-media-submit">Get in touch</button></li>
                     </ul>
                 </form>
