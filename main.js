@@ -217,3 +217,25 @@ formValue.addEventListener('submit', (event) => {
     document.getElementById('email-notification').style.position = 'absolute';
   }
 });
+
+const fullName = document.getElementById('full-name');
+const userEmail = document.getElementById('email')
+const userText = document.getElementById('user-comment')
+
+formValue.addEventListener('change', () => {
+  const userData = {
+    userName: fullName.value,
+    emailAddress: userEmail.value,
+    userComment: userText.value
+  }
+  
+  const storeD = JSON.stringify(userData);
+  localStorage.setItem('userData', storeD)
+});
+
+const newValue = localStorage.getItem('userData')
+const newData = JSON.parse(newValue)
+
+fullName.value = newData.userName
+userEmail.value = newData.emailAddress
+userText.value = newData.userComment
