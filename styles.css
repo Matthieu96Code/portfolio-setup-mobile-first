@@ -199,10 +199,7 @@ a {
   line-height: 52px;
   color: #1c1a19;
   border-bottom: 1px solid #212121;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 120px;
-  margin-bottom: 90px;
+  margin: 120px 20px 90px 20px;
   padding-bottom: 40px;
 }
 
