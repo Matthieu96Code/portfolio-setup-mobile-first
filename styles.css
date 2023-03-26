@@ -221,9 +221,7 @@ a {
   font-size: 32px;
   line-height: 44px;
   color: #091ea2;
-  margin: 0;
-  margin-top: 12px;
-  margin-bottom: 6px;
+  margin: 12px 0 6px 0;
 }
 
 .first-project p {
