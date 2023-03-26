@@ -206,8 +206,7 @@ a {
 .first-project {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
 }
 
 .first-project img {
