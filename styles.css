@@ -18,6 +18,38 @@
   src: url('./fonts/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo a,
+.supporting-text {
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-style: normal;
+}
+
+.primary-text,
+.projects h2,
+.first-project h3 {
+  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.description {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.about-me a,
+.first-project a,
+.next-projects a,
+.first-project p,
+.first-project button  {
+  font-family: 'Inter', 'Courier New', Courier, monospace;
+  font-style: normal;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -51,9 +83,7 @@ a {
 }
 
 .logo a {
-  font-family: 'Roboto', 'Courier New', Courier, monospace;
   color: #fff;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -74,8 +104,7 @@ a {
   background-repeat: no-repeat;
   background-position: right 295px;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -83,8 +112,6 @@ a {
 
 .primary-text {
   height: auto;
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -95,8 +122,6 @@ a {
 }
 
 .supporting-text {
-  font-family: 'Roboto', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -106,8 +131,6 @@ a {
 }
 
 .description {
-  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -126,8 +149,6 @@ a {
 }
 
 .about-me a {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -143,14 +164,7 @@ a {
   transition-duration: 1s;
 }
 
-.social-media2 a {
-  text-decoration: none;
-}
-
 .first-project a {
-  text-decoration: none;
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -158,9 +172,6 @@ a {
 }
 
 .next-projects a {
-  text-decoration: none;
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -170,11 +181,8 @@ a {
 .social-media2 {
   display: flex;
   justify-content: center;
-  padding-left: 0;
-  padding-top: 20px;
-  margin-top: 124px;
-  margin-bottom: 8px;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  margin: 124px 0 8px 0;
   border-top: solid 1px #dfe1e6;
 }
 
@@ -194,17 +202,12 @@ a {
 
 .projects h2 {
   text-align: center;
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 350px;
   font-size: 40px;
   line-height: 52px;
   color: #1c1a19;
   border-bottom: 1px solid #212121;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 120px;
-  margin-bottom: 90px;
+  margin: 120px 20px 90px 20px;
   padding-bottom: 40px;
 }
 
@@ -221,8 +224,6 @@ a {
 }
 
 .first-project h3 {
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -233,8 +234,6 @@ a {
 }
 
 .first-project p {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -252,13 +251,10 @@ a {
   display: inline;
   border: 1px solid #8993a4;
   padding: 10px 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin: 0 12px 12px 0;
 }
 
 .first-project button {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -279,10 +275,8 @@ a {
   background-repeat: no-repeat;
   background-size: 327px 386px;
   background-position-x: left;
-  margin-left: 24px;
   padding-top: 84px;
-  margin-top: 24px;
-  margin-right: auto;
+  margin: 24px auto 0 24px
 }
 
 .next-projects h3 {
