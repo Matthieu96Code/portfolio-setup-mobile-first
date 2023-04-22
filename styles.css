@@ -23,6 +23,14 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .logo a,
 .supporting-text {
   font-family: 'Roboto', 'Courier New', Courier, monospace;
@@ -55,7 +63,7 @@
 .next-projects button,
 .about-me p,
 .achivement-list li,
-.social-media-submit  {
+.social-media-submit {
   font-family: 'Inter', 'Courier New', Courier, monospace;
   font-style: normal;
 }
@@ -67,14 +75,6 @@ body {
   background-color: #e5e5e5;
   width: 100%;
   margin: auto;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .toolbar {
@@ -283,7 +283,7 @@ a {
   background-size: 327px 386px;
   background-position-x: left;
   padding-top: 84px;
-  margin: 24px auto 0 24px
+  margin: 24px auto 0 24px;
 }
 
 .next-projects h3 {
