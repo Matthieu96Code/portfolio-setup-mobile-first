@@ -27,6 +27,7 @@
 .supporting-text {
   font-family: 'Roboto', 'Courier New', Courier, monospace;
   font-style: normal;
+  font-weight: 700;
 }
 
 .primary-text,
@@ -93,10 +94,8 @@ a {
 
 .logo a {
   color: #fff;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
 }
 
 .nav-btn {
@@ -131,7 +130,6 @@ a {
 }
 
 .supporting-text {
-  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.37px;
@@ -726,6 +724,7 @@ button:visited {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 18px;
   }
 
   .info-project1 a {
@@ -832,9 +831,7 @@ button:visited {
   }
 
   .contacts {
-    padding: 0;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding: 0 9%;
     flex-direction: row;
   }
 
