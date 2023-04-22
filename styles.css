@@ -31,12 +31,16 @@
 
 .primary-text,
 .projects h2,
-.first-project h3 {
+.first-project h3,
+.next-projects h3,
+.about-me-title,
+.contacts h4 {
   font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
 }
 
-.description {
+.description,
+.achivement-list h4 {
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
 }
@@ -45,7 +49,11 @@
 .first-project a,
 .next-projects a,
 .first-project p,
-.first-project button  {
+.first-project button,
+.next-projects p,
+.next-projects button,
+.about-me p,
+.achivement-list li  {
   font-family: 'Inter', 'Courier New', Courier, monospace;
   font-style: normal;
 }
@@ -280,12 +288,9 @@ a {
 }
 
 .next-projects h3 {
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  margin: 0;
   color: #fff;
   margin-left: 16px;
 }
@@ -295,13 +300,10 @@ a {
 }
 
 .next-projects p {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin: 0;
   margin-left: 16px;
   width: 295px;
 }
@@ -316,15 +318,12 @@ a {
   display: inline;
   border: 1px solid #8993a4;
   padding: 10px 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin: 0 12px 12px 0;
   background: rgba(255, 255, 255, 0.24);
 }
 
 .next-projects button {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
   width: 327px;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -344,21 +343,18 @@ a {
 .aboutme-langs {
   background-color: #fff;
   width: 100%;
-  margin: 0;
   padding-top: 120px;
 }
 
 .contacts-section {
   background-color: #fff;
   width: 100%;
-  margin: 0;
   padding-top: 120px;
 }
 
 .footer-section {
   background-color: #fff;
   width: 100%;
-  margin: 0;
   padding-top: 120px;
 }
 
@@ -369,24 +365,18 @@ a {
   background-position-y: 350px;
   background-color: #1c1a19;
   padding: 120px 24px 209px 24px;
-  margin-bottom: 0;
 }
 
 .about-me-title {
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin: 0;
 }
 
 .about-me p {
   max-width: 327px;
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -398,7 +388,6 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #1c1a19;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +398,6 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0;
   align-items: center;
 }
 
@@ -417,16 +405,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-}
-
-.achivement-list {
-  list-style-type: none;
 }
 
 .achivement-list h4 {
-  font-family: 'Poppins', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -447,8 +428,6 @@ a {
 }
 
 .achivement-list li {
-  font-family: 'Inter', 'Courier New', Courier, monospace;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
@@ -466,25 +445,17 @@ a {
 }
 
 .contacts h4 {
-  font-family: 'Crete Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin: 0;
   margin-bottom: 73px;
-}
-
-.contacts form {
-  padding: 0;
 }
 
 .contacts ul {
   display: flex;
   flex-direction: column;
-  padding: 0;
   list-style: none;
 }
 
